@@ -86,6 +86,23 @@ section{padding:100px 0}
 .prp .num{font-size:1.9rem}
 .prp .pillar p{min-height:0}
 
+.vid video{width:100%;display:block;border-radius:18px;background:#e9e6e2;aspect-ratio:16/9;object-fit:cover}
+.vid.arch video{aspect-ratio:4/5;object-position:center;border-radius:200px 200px 18px 18px;height:560px}
+.vcap{font-family:'Cormorant Garamond';font-style:italic;font-size:1.25rem;color:var(--muted);margin-top:14px}
+.reviews{background:var(--cream);overflow:hidden}
+.stars{font-size:1rem;color:var(--muted);margin-bottom:40px}
+.stars span{font-size:1.4rem;letter-spacing:.1em;margin-right:6px}
+.stars a{color:var(--gold-dk)}
+.rv-track{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 max(28px,calc((100vw - 1200px)/2 + 28px)) 10px;scrollbar-width:none}
+.rv-track::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(380px,82vw);scroll-snap-align:start;background:#fff;border:1px solid var(--stone);border-radius:18px;padding:30px 28px}
+.rv blockquote{border:0;padding:0;margin:0 0 18px;font-size:1.35rem}
+.rv figcaption{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dk)}
+.rv-nav{display:flex;gap:12px;justify-content:center;margin-top:26px}
+.rv-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold-dk);font-size:1.1rem;cursor:pointer}
+.rv-nav button:hover{background:var(--gold);color:#fff}
+@media (max-width:900px){.vid.arch video{height:420px}}
+
 /* concerns */
 .concerns{background:var(--cream)}
 .concern-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:40px}
@@ -201,6 +218,7 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
       <li><a href="#concerns">Concerns</a></li>
       <li><a href="#guide">Thread guide</a></li>
       <li><a href="#packages">Packages</a></li>
+      <li><a href="#reviews">Reviews</a></li>
       <li><a href="#doctor">Dr Maria</a></li>
     </ul>
     <a class="btn btn-gold" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Book now</a>
@@ -250,7 +268,10 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
     <h2 class="sec-title reveal">I don't want to look done</h2>
     <blockquote class="reveal" style="max-width:820px;margin:26px auto;text-align:left">&ldquo;The most common thing patients say at their first cosmetic consultation is that they do not want to look done. They want to look like the version of themselves they recognise.&rdquo;</blockquote>
     <p class="sec-lead reveal">You don't have to. Regenerative cosmetic medicine isn't about turning you into somebody else. It starts with understanding your skin, your face and your goals.</p>
-    <p class="reveal" style="margin-top:28px"><a class="btn btn-dark" href="#doctor">Meet Dr Maria</a></p>
+    <div class="vid reveal" style="max-width:760px;margin:40px auto 0">
+      <video controls playsinline preload="none" poster="assets/maria-ageing-poster.webp"><source src="assets/maria-ageing.mp4" type="video/mp4"></video>
+      <p class="vcap">Dr Maria on ageing well: &ldquo;Ageing well means maintaining that sense of optimal wellness, of good energy.&rdquo;</p>
+    </div>
   </div>
 </section>
 
@@ -334,7 +355,7 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
     <div>
       <span class="badge reveal">New at Mojo</span>
       <h2 class="sec-title reveal">Buccal facial massage</h2>
-      <p class="reveal" style="color:var(--muted)">A deep facial massage that works from both inside and outside the cheeks to release tension held in the face. Our skin therapist has just completed her training, and it sits beautifully alongside our regenerative treatments.</p>
+      <p class="reveal" style="color:var(--muted)">A deep facial massage that works from both inside and outside the cheeks to release tension held in the face. Our skin therapist Grace has just completed her training, and it sits beautifully alongside our regenerative treatments.</p>
       <p class="reveal" style="margin:26px 0"><a class="btn btn-gold" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Book a buccal facial</a></p>
     </div>
   </div>
@@ -354,9 +375,26 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
   </div>
 </section>
 
+<section class="reviews" id="reviews">
+  <div class="wrap center">
+    <div class="eyebrow reveal">Reviews</div>
+    <h2 class="sec-title reveal">In our clients' words</h2>
+    <div class="stars reveal"><span class="gold-text">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 5.0 on Google &middot; <a href="https://www.google.com/maps/search/?api=1&query=Mojo%20Cosmetic%20Clinic&query_place_id=ChIJhWj_7g2vEmsRCBUsDreKfso" target="_blank" rel="noopener">read every review</a></div>
+  </div>
+  <div class="rv-track reveal" id="rv">
+    <figure class="rv"><blockquote>&ldquo;The service at Mojo was excellent from the greeting at the front desk through to Grace's treatment.&rdquo;</blockquote><figcaption>Debra Player</figcaption></figure>
+    <figure class="rv"><blockquote>&ldquo;Huge thank you to Grace for the amazing buccal massage! She was very attentive and responsive, providing more or less pressure as I needed.&rdquo;</blockquote><figcaption>Caz F</figcaption></figure>
+    <figure class="rv"><blockquote>&ldquo;A relaxing and delightful experience under confident intuitive hands. I'd highly recommend this place for the quality of treatments and the exceptional customer care.&rdquo;</blockquote><figcaption>Joanna</figcaption></figure>
+    <figure class="rv"><blockquote>&ldquo;Grace was fantastic with a fun sense of humour and a serious side when it mattered. She made me feel comfortable throughout the 2 hour treatment.&rdquo;</blockquote><figcaption>Steve Mcaree</figcaption></figure>
+    <figure class="rv"><blockquote>&ldquo;I had a lovely experience with the wonderful Grace. She is warm and welcoming.&rdquo;</blockquote><figcaption>Kristina Holmes</figcaption></figure>
+    <figure class="rv"><blockquote>&ldquo;Amazing customer service and the staff are incredible!! Will definitely be going again!&rdquo;</blockquote><figcaption>Livia Player</figcaption></figure>
+  </div>
+  <div class="rv-nav"><button aria-label="Previous review" onclick="rvGo(-1)">&#8592;</button><button aria-label="Next review" onclick="rvGo(1)">&#8594;</button></div>
+</section>
+
 <section class="doctor" id="doctor">
   <div class="wrap split">
-    <img class="reveal" src="assets/dr-maria.webp" alt="Dr Maria Mackey">
+    <div class="vid arch reveal"><video controls playsinline preload="none" poster="assets/maria-intro-poster.webp"><source src="assets/maria-intro.mp4" type="video/mp4"></video></div>
     <div>
       <div class="eyebrow reveal">Meet our founder</div>
       <h2 class="sec-title reveal">Dr Maria Mackey</h2>
@@ -412,6 +450,11 @@ document.querySelectorAll('#clist li').forEach(li=>{
     imgs.forEach((im,i)=>im.classList.toggle('on',i==li.dataset.img));cap.textContent=li.dataset.cap};
   li.addEventListener('mouseenter',go);li.addEventListener('focusin',go);
 });
+// reviews carousel
+const rv=document.getElementById('rv');
+function rvGo(d){const c=rv.querySelector('.rv');rv.scrollBy({left:d*(c.offsetWidth+22),behavior:'smooth'})}
+let rvT=setInterval(()=>{if(rv.scrollLeft+rv.clientWidth>=rv.scrollWidth-5)rv.scrollTo({left:0,behavior:'smooth'});else rvGo(1)},5000);
+rv.addEventListener('pointerdown',()=>clearInterval(rvT));
 // guide form
 function guideDone(e){e.preventDefault();document.getElementById('gform').style.display='none';document.getElementById('gthanks').style.display='block';return false}
 // close mobile menu on click
