@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mojo Cosmetic Clinic | Your plan from Clinic Catalyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#00B4A0;--teal-lt:#00D4BC;--hero:#0A2A28;--dark:#0E2D2A;--gold:#D4A853;--red:#E84040;--paper:#f5f8f7;--line:#dbe6e3;--text:#1d2b29;--muted:#5a6d6a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:var(--text);background:var(--paper);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:'Montserrat',sans-serif;line-height:1.12}
+h1,h2{font-weight:900;text-transform:uppercase;letter-spacing:.01em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.kicker{font-family:'Montserrat';font-weight:700;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--teal)}
+section{padding:90px 0}
+h2{font-size:clamp(1.8rem,3.6vw,2.7rem);margin:12px 0 18px}
+.lead{font-size:1.08rem;color:var(--muted);max-width:720px}
+.btn{display:inline-flex;align-items:center;gap:.5em;padding:15px 28px;border-radius:8px;font-family:'Montserrat';font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;transition:.3s;border:2px solid transparent}
+.btn-teal{background:var(--teal-lt);color:var(--hero)}
+.btn-teal:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.btn-ghost{border-color:rgba(0,212,188,.6);color:#dffcf7}
+.btn-ghost:hover{background:rgba(0,212,188,.12)}
+
+/* hero */
+.hero{position:relative;color:#eafaf7;background:var(--hero);overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:url('https://assets.cdn.filesafe.space/nrnTN07xakan82JmlsuO/media/6b8775d4-7c48-4e51-ba81-26e0690cd1f5.webp') center/cover;opacity:.5}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(10,42,40,.55),rgba(10,42,40,.92) 75%)}
+.hero .wrap{position:relative;z-index:2;padding-top:40px;padding-bottom:100px}
+.topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:80px;gap:16px;flex-wrap:wrap}
+.topbar img{height:30px;width:auto}
+.topbar .mojo{height:54px;border-radius:6px}
+.topbar .x{font-family:'Montserrat';font-weight:800;color:var(--teal-lt);margin:0 14px}
+.brands{display:flex;align-items:center}
+.date{font-size:.85rem;color:#a9d8d0}
+.hero h1{font-size:clamp(2.3rem,5.6vw,4.4rem);max-width:900px}
+.hero h1 span{color:var(--teal-lt)}
+.hero p{font-size:1.15rem;max-width:640px;margin:24px 0 36px;color:#c9ebe5}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+/* heard */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+.q{background:#fff;border:1px solid var(--line);border-left:4px solid var(--teal);border-radius:12px;padding:26px 26px 22px}
+.q p{font-style:italic;font-size:1.08rem}
+.q small{display:block;margin-top:10px;color:var(--muted);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;font-family:'Montserrat';font-weight:700}
+
+/* big idea */
+.idea{background:var(--dark);color:#e3f6f2}
+.idea .lead{color:#b5dcd5}
+.idea-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.idea img{border-radius:16px;height:460px;width:100%;object-fit:cover;object-position:center top}
+.idea ul{list-style:none;margin:24px 0 30px}
+.idea li{padding:12px 0 12px 34px;position:relative;border-bottom:1px solid rgba(0,212,188,.18)}
+.idea li:before{content:"";position:absolute;left:0;top:19px;width:16px;height:3px;background:var(--teal-lt)}
+
+/* quick wins */
+.wins{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:40px}
+.win{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px}
+.win .n{font-family:'Montserrat';font-weight:900;color:var(--teal);font-size:.9rem;letter-spacing:.14em}
+.win h3{font-size:1.2rem;margin:8px 0 10px}
+.win p{color:var(--muted);font-size:.96rem}
+.swaps{margin-top:40px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.swaps h3{padding:24px 26px 6px;font-size:1.25rem}
+.swaps>p{padding:0 26px 16px;color:var(--muted);font-size:.95rem}
+.row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.row div{padding:16px 26px;font-size:.95rem}
+.row .from{color:var(--muted);background:#fafcfb}
+.row .to{font-weight:600}
+.row.head div{font-family:'Montserrat';font-weight:800;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);background:#fff}
+
+/* system */
+.system{background:#fff}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:44px;counter-reset:s}
+.step{position:relative;padding:26px 20px;border:1px solid var(--line);background:var(--paper);text-align:center}
+.step:not(:last-child):after{content:"\2192";position:absolute;right:-13px;top:50%;transform:translateY(-50%);background:var(--teal-lt);color:var(--hero);width:26px;height:26px;border-radius:50%;font-weight:800;z-index:2;line-height:26px;font-size:.9rem}
+.step b{display:block;font-family:'Montserrat';font-weight:800;font-size:1rem;margin-bottom:6px}
+.step span{font-size:.88rem;color:var(--muted)}
+.pieces{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:50px}
+.piece{border:1px solid var(--line);border-radius:14px;padding:28px;background:var(--paper)}
+.piece h3{font-size:1.15rem;margin-bottom:8px}
+.piece p{color:var(--muted);font-size:.95rem}
+.piece .tag{display:inline-block;font-family:'Montserrat';font-weight:800;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--hero);background:var(--teal-lt);padding:4px 10px;border-radius:20px;margin-bottom:12px}
+.see{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.see .btn{background:var(--hero);color:#eafaf7}
+
+/* options */
+.options{background:var(--hero);color:#e3f6f2;position:relative;overflow:hidden}
+.options:before{content:"";position:absolute;inset:0;background:url('https://assets.cdn.filesafe.space/nrnTN07xakan82JmlsuO/media/d95e79bc-9c15-44d6-834b-8b5d973399b3.webp') center/cover;opacity:.25}
+.options .wrap{position:relative}
+.options .lead{color:#b5dcd5}
+.opt-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.opt{background:rgba(255,255,255,.97);color:var(--text);border-radius:18px;padding:36px 32px;display:flex;flex-direction:column}
+.opt.rec{outline:3px solid var(--teal-lt)}
+.opt .label{font-family:'Montserrat';font-weight:800;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+.opt h3{font-size:1.55rem;font-weight:900;text-transform:uppercase;margin:10px 0 12px}
+.opt>p{color:var(--muted)}
+.opt ul{list-style:none;margin:20px 0 24px}
+.opt li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid var(--line);font-size:.95rem}
+.opt li:before{content:"\2713";position:absolute;left:0;color:var(--teal);font-weight:800}
+.price{font-family:'Montserrat';font-weight:900;font-size:2.4rem;color:var(--hero);line-height:1}
+.price small{display:block;font-size:.78rem;font-weight:700;color:var(--muted);letter-spacing:.06em;margin-top:6px}
+.price-note{font-size:.9rem;color:var(--muted);margin:10px 0 22px}
+.opt .btn{margin-top:auto;justify-content:center}
+.opt .btn-dark{background:var(--hero);color:#eafaf7}
+.days{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:18px 0 6px}
+.day{background:var(--paper);border-radius:10px;padding:12px 14px;font-size:.86rem}
+.day b{display:block;font-family:'Montserrat';font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+
+.next{text-align:center}
+.next .lead{margin:0 auto 30px}
+footer{background:#061b19;color:#8fb8b1;text-align:center;padding:34px 20px;font-size:.85rem}
+footer img{height:26px;margin:0 auto 14px;width:auto}
+
+.reveal{opacity:0;transform:translateY(26px);transition:.9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:860px){
+  .quotes,.wins,.pieces,.opt-grid,.idea-grid{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr 1fr;gap:14px}
+  .step:after{display:none}
+  .idea img{height:380px}
+  .topbar{margin-bottom:50px}
+  section{padding:66px 0}
+}
+@media (max-width:520px){
+  .wrap{padding:0 18px}
+  .flow{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+  .row .from{padding-bottom:6px}
+  .row .to{padding-top:6px}
+  .row.head{display:none}
+  .row .from:before{content:"Now: ";font-weight:600}
+  .row .to:before{content:"Try: ";color:var(--teal)}
+  .opt{padding:28px 22px}
+  .days{grid-template-columns:1fr}
+  .topbar .mojo{height:44px}
+  .topbar img{height:22px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brands"><img src="assets/cc-logo.png" alt="Clinic Catalyst"><span class="x">&times;</span><img class="mojo" src="assets/mojo-logo.webp" alt="Mojo Cosmetic Clinic"></div>
+      <div class="date">Prepared for Dr Maria Mackey &middot; Friday 2 October 2026</div>
+    </div>
+    <div class="kicker">Your plan</div>
+    <h1 class="reveal">More of <span>you</span>, less of the grind</h1>
+    <p class="reveal">You already have the hard parts: the knowledge, the treatments, the team and a website that is starting to be found. What's missing is the system that puts you in front of the right people and follows up for you, so it stops depending on one person's spare time.</p>
+    <div class="ctas reveal">
+      <a class="btn btn-teal" href="website.html">See your concept homepage</a>
+      <a class="btn btn-ghost" href="#options">How we install it</a>
+    </div>
+  </div>
+</header>
+
+<section id="heard">
+  <div class="wrap">
+    <div class="kicker">What we heard on Tuesday</div>
+    <h2 class="reveal">In your words</h2>
+    <div class="quotes">
+      <div class="q reveal"><p>&ldquo;We are struggling to use Go High Level to its full capacity, and my head receptionist can only do what she can do.&rdquo;</p><small>On the systems</small></div>
+      <div class="q reveal"><p>&ldquo;People really aren't focused on regeneration here.&rdquo;</p><small>On the opportunity</small></div>
+      <div class="q reveal"><p>&ldquo;It's a really exciting field.&rdquo;</p><small>On regenerative medicine</small></div>
+      <div class="q reveal"><p>&ldquo;This is not meant to be this hard.&rdquo;</p><small>On the last few years</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="idea">
+  <div class="wrap idea-grid">
+    <div>
+      <div class="kicker">The big idea</div>
+      <h2 class="reveal">You are the marketing</h2>
+      <p class="lead reveal">Your face lit up the moment you started talking about PRP and regeneration. That energy does half the selling. The plan is built around getting more of it in front of the right people, without you having to run the machinery.</p>
+      <ul class="reveal">
+        <li>Lead with regeneration, where you are different, instead of the treatments every clinic offers</li>
+        <li>Short, unscripted videos of you, filmed on a phone and tidied up for you</li>
+        <li>A thread lift guide that educates first, then invites people to book</li>
+        <li>Follow-up that runs on its own, so no enquiry goes cold</li>
+      </ul>
+      <a class="btn btn-teal reveal" href="website.html">Open the concept homepage</a>
+    </div>
+    <img class="reveal" src="assets/dr-maria.webp" alt="Dr Maria Mackey">
+  </div>
+</section>
+
+<section id="wins">
+  <div class="wrap">
+    <div class="kicker">Quick wins for this week</div>
+    <h2 class="reveal">Things your team can do now</h2>
+    <p class="lead reveal">Small changes your head receptionist and IT guy can make straight away, before any bigger system goes in.</p>
+    <div class="wins">
+      <div class="win reveal"><div class="n">01</div><h3>Give the thread page its own words</h3><p>Point the Aptos thread lifting page title at Neutral Bay and write it about threads from top to bottom, with the thread guide form at the end. It becomes the landing page for your thread campaigns, on Google or Meta.</p></div>
+      <div class="win reveal"><div class="n">02</div><h3>Put Mojo on the newsletter sign-up</h3><p>Change the homepage sign-up line to "the latest news and offers from Mojo Cosmetic Clinic" so every new subscriber knows exactly who they have joined.</p></div>
+      <div class="win reveal"><div class="n">03</div><h3>Match Fresha to your leads every two days</h3><p>Fresha doesn't talk to other systems, so export your client list every couple of days and match it against new leads. From then on you can see which campaign actually booked people in.</p></div>
+      <div class="win reveal"><div class="n">04</div><h3>Film 30 seconds, exactly as you are</h3><p>No hair and makeup needed. Talk to your phone about one thing you love, like PRP or why not all threads are the same, and send it to Kelly. You'll see how good it looks once it's tidied up.</p></div>
+    </div>
+
+    <div class="swaps reveal">
+      <h3>Wording that sells and stays inside the rules</h3>
+      <p>A few lines from the current site, rewritten so they meet the AHPRA and TGA advertising guidelines and still carry your warmth.</p>
+      <div class="row head"><div>Now</div><div>Try</div></div>
+      <div class="row"><div class="from">"our expert doctors"</div><div class="to">"our doctors, who have a special interest in regenerative cosmetic medicine"</div></div>
+      <div class="row"><div class="from">"We are the trusted experts in Cosmetic Treatments in Neutral Bay"</div><div class="to">"A doctor-led cosmetic clinic in Neutral Bay, focused on regeneration"</div></div>
+      <div class="row"><div class="from">"Safe, Cutting-Edge Treatments"</div><div class="to">"Doctor-led treatments, with every risk explained before you decide"</div></div>
+      <div class="row"><div class="from">"safety, precision, and stunning outcomes"</div><div class="to">"care, precision and a plan built around your goals"</div></div>
+      <div class="row"><div class="from">"We are unrivalled in our knowledge of functional medicine"</div><div class="to">"Led by a doctor practising integrative medicine since 2002"</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="system">
+  <div class="wrap">
+    <div class="kicker">The system</div>
+    <h2 class="reveal">How a stranger becomes a booked consult</h2>
+    <p class="lead reveal">Here is your thread lift journey from start to finish. Once it's built, the same pattern runs for every treatment you want to grow.</p>
+    <div class="flow">
+      <div class="step reveal"><b>1. Found</b><span>A video of you, or a Google search for thread lifting in Neutral Bay</span></div>
+      <div class="step reveal"><b>2. Guide</b><span>They download "Not all threads are the same"</span></div>
+      <div class="step reveal"><b>3. Follow-up</b><span>Email and text over the next few days, in your voice</span></div>
+      <div class="step reveal"><b>4. Booked</b><span>Consultation booked, and your team only steps in when it counts</span></div>
+    </div>
+
+    <div class="pieces">
+      <div class="piece reveal"><span class="tag">For you</span><h3>Claude runs your Go High Level</h3><p>You already use Claude. We connect it to your Go High Level account so it builds the forms, follow-ups and campaigns when you ask in plain English. Your head receptionist runs the finished system, which is what she's brilliant at.</p></div>
+      <div class="piece reveal"><span class="tag">Threads</span><h3>The thread lift guide funnel</h3><p>Education first, then an invitation to consult. The guide, the landing page and the follow-up are all written to the AHPRA and TGA rules, with before and after photos kept where the rules allow.</p></div>
+      <div class="piece reveal"><span class="tag">Skin therapist</span><h3>Keep your skin therapist busy</h3><p>Buccal facial massage becomes its own offer, with its own page and campaign, and courses that rebook themselves. Her book fills while you focus on PRP and threads.</p></div>
+      <div class="piece reveal"><span class="tag">Community</span><h3>Mojo Evenings that run themselves</h3><p>A regular evening, with invitations, reminders and follow-ups timed automatically. It won't fall to the side when the clinic gets busy.</p></div>
+    </div>
+    <div class="see reveal">
+      <a class="btn" href="website.html#guide">Try the guide form</a>
+      <a class="btn" href="website.html#concerns">See the concern menu</a>
+      <a class="btn" href="website.html#evenings">See Mojo Evenings</a>
+    </div>
+  </div>
+</section>
+
+<section class="options" id="options">
+  <div class="wrap">
+    <div class="kicker">How we install it</div>
+    <h2 class="reveal">Two ways to get there</h2>
+    <p class="lead reveal">Both install the full system in your own accounts, so you own it. The difference is where we do it and how much we do with you.</p>
+    <div class="opt-grid">
+      <div class="opt reveal">
+        <div class="label">Option one</div>
+        <h3>Custom 30-day transformation</h3>
+        <p>We come to you in Neutral Bay and build the whole system in your clinic, with your team, then work beside you for 30 days until it's running.</p>
+        <ul>
+          <li>Kelly and Alicia on site in Sydney</li>
+          <li>Claude connected to your Go High Level</li>
+          <li>Thread guide funnel, buccal facial offer and Mojo Evenings built for you</li>
+          <li>Offer positioning and ad campaigns with Alicia</li>
+          <li>Your head receptionist trained to run it</li>
+          <li>30 days of building with you</li>
+        </ul>
+        <div class="price">Tailored<small>Scoped to your clinic, plus travel to Sydney</small></div>
+        <p class="price-note">We'll walk you through the investment on our call.</p>
+        <a class="btn btn-dark" href="#next">Talk it through on Friday</a>
+      </div>
+      <div class="opt rec reveal">
+        <div class="label">Option two</div>
+        <h3>3-Day Brisbane Workshop + filming in Sydney</h3>
+        <p>Join ten clinics in Brisbane on 26 to 28 October and leave with the system running. Then we come down to Neutral Bay to film with you and show you how easy it can be.</p>
+        <div class="days">
+          <div class="day"><b>Before you arrive</b>Your system set up and waiting</div>
+          <div class="day"><b>Day 1</b>Claude and your systems installed</div>
+          <div class="day"><b>Day 2</b>Your Meta campaign built</div>
+          <div class="day"><b>Day 3</b>Your Google campaign built</div>
+        </div>
+        <ul>
+          <li>30 days of support afterwards</li>
+          <li>A filming session with us at your clinic in Neutral Bay</li>
+          <li>Bring your head receptionist for $500</li>
+        </ul>
+        <div class="price">$5,000<small>Including GST, for the full three days</small></div>
+        <p class="price-note">A $550 deposit holds your seat and comes off the total.</p>
+        <a class="btn btn-teal" href="https://www.cliniccatalyst.com.au/checkout" target="_blank" rel="noopener">Secure your seat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="next" id="next">
+  <div class="wrap">
+    <div class="kicker">Next step</div>
+    <h2 class="reveal">Pick the path that suits you</h2>
+    <p class="lead reveal">We'll go through both options on Friday and answer every question. You already have the knowledge, the treatments and the team, so this is the part that makes it easier.</p>
+    <a class="btn btn-teal reveal" href="website.html">Look through your concept homepage again</a>
+  </div>
+</section>
+
+<footer>
+  <img src="assets/cc-logo.png" alt="Clinic Catalyst">
+  Prepared by Kelly Wotherspoon and Alicia Hagen, Clinic Catalyst. Concept materials for Mojo Cosmetic Clinic only.
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
