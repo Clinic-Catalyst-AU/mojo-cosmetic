@@ -82,6 +82,10 @@ section{padding:100px 0}
 .pillar h3{font-size:1.6rem;margin:14px 0 10px}
 .pillar p{color:var(--muted);font-size:.97rem}
 
+.done{background:#fff;border-top:1px solid var(--stone)}
+.prp .num{font-size:1.9rem}
+.prp .pillar p{min-height:0}
+
 /* concerns */
 .concerns{background:var(--cream)}
 .concern-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:40px}
@@ -193,6 +197,7 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
     <a class="logo" href="#top"><img src="assets/mojo-logo.webp" alt="Mojo Cosmetic Clinic"></a>
     <ul id="menu">
       <li><a href="#approach">Approach</a></li>
+      <li><a href="#prp">PRP</a></li>
       <li><a href="#concerns">Concerns</a></li>
       <li><a href="#guide">Thread guide</a></li>
       <li><a href="#packages">Packages</a></li>
@@ -206,9 +211,9 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
 <header class="hero" id="top">
   <div class="wrap">
     <div class="hero-copy">
-      <div class="eyebrow reveal-in d1">Neutral Bay &middot; Sydney</div>
+      <div class="eyebrow reveal-in d1">Doctor-led &middot; Skin biology first &middot; Neutral Bay</div>
       <h1 class="reveal-in d2">The House of <em class="gold-text">Cosmetic Regenerative</em> Medicine</h1>
-      <p class="lead reveal-in d3">Doctor-led treatments that work with your body's own repair processes. Your own platelets, collagen-stimulating threads and skin treatments chosen to help your skin do more of what it already knows how to do.</p>
+      <p class="lead reveal-in d3">Skin from within. Your skin reflects what is happening inside your body, so we start with its biology, not a treatment menu. Then we use regenerative treatments selectively, to support skin that looks healthy and still looks like you.</p>
       <div class="ctas reveal-in d4">
         <a class="btn btn-gold" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Book your consultation</a>
         <a class="btn btn-line" href="#guide">Get the thread lift guide</a>
@@ -229,13 +234,23 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
 <section id="approach">
   <div class="wrap center">
     <div class="eyebrow reveal">Our approach</div>
-    <h2 class="sec-title reveal">Regeneration first. Always.</h2>
-    <p class="sec-lead reveal">We would rather help your skin rebuild than simply cover it. Every plan starts with a consultation with a doctor, and every option, cost and risk is explained before you decide.</p>
+    <h2 class="sec-title reveal">Skin from within</h2>
+    <p class="sec-lead reveal">Hormones, nutrients, gut health and inflammation all show up in your skin. Dr Maria looks at the whole picture first, then at what your face actually needs. Every option, cost and risk is explained before you decide.</p>
     <div class="pillars">
-      <div class="pillar reveal"><div class="num gold-text">01</div><h3>Your own platelets</h3><p>PRP is prepared from a small sample of your own blood. We use a concentrated preparation, and your doctor explains exactly how it is made at your consultation.</p></div>
-      <div class="pillar reveal"><div class="num gold-text">02</div><h3>Threads that work beneath</h3><p>Aptos threads are placed under the skin by a doctor and are designed to lift while prompting your body to build collagen around them. Not all threads are the same, and we will show you why.</p></div>
+      <div class="pillar reveal"><div class="num gold-text">01</div><h3>Your own platelets</h3><p>A small sample of your own blood is prepared using the Emcyte PurePRP system, a closed-system device that produces a high-concentration platelet preparation. Not all PRP is prepared the same way, and we will show you the difference.</p></div>
+      <div class="pillar reveal"><div class="num gold-text">02</div><h3>Threads that work beneath</h3><p>Aptos threads are absorbable threads placed in the deeper layers of the skin to lift and prompt your body's own collagen response. Dr Maria trained in Aptos at an advanced level in Tbilisi, Georgia.</p></div>
       <div class="pillar reveal"><div class="num gold-text">03</div><h3>Skin that keeps up</h3><p>SQT, skin needling, LED and our new buccal facial massage keep your skin in rhythm between doctor treatments, with our skin therapist guiding every visit.</p></div>
     </div>
+  </div>
+</section>
+
+<section class="done" id="done">
+  <div class="wrap center">
+    <div class="eyebrow reveal">A word from Dr Maria</div>
+    <h2 class="sec-title reveal">I don't want to look done</h2>
+    <blockquote class="reveal" style="max-width:820px;margin:26px auto;text-align:left">&ldquo;The most common thing patients say at their first cosmetic consultation is that they do not want to look done. They want to look like the version of themselves they recognise.&rdquo;</blockquote>
+    <p class="sec-lead reveal">You don't have to. Regenerative cosmetic medicine isn't about turning you into somebody else. It starts with understanding your skin, your face and your goals.</p>
+    <p class="reveal" style="margin-top:28px"><a class="btn btn-dark" href="#doctor">Meet Dr Maria</a></p>
   </div>
 </section>
 
@@ -245,11 +260,11 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
     <h2 class="sec-title reveal">What would you like to talk about?</h2>
     <div class="concern-grid">
       <ul class="concern-list" id="clist">
-        <li class="on" data-img="0" data-cap="Skin laxity. A consultation with a doctor maps whether threads, PRP or a combination suits your skin."><a href="#guide">Skin laxity <small>Threads &middot; PRP</small></a></li>
-        <li data-img="1" data-cap="Dull, tired skin. SQT, LED and skin needling, planned as a course with your skin therapist."><a href="#packages">Dull, tired skin <small>SQT &middot; LED</small></a></li>
+        <li class="on" data-img="0" data-cap="“My skin suddenly looks thinner, duller and different.” A regenerative skin consultation starts with why."><a href="#prp">My skin has changed <small>Skin consult</small></a></li>
+        <li data-img="1" data-cap="“I don't necessarily want filler. What else can I do?” Dr Maria talks you through the regenerative options."><a href="#prp">I don't want filler <small>PRP &middot; SQT</small></a></li>
+        <li data-img="0" data-cap="Facial laxity. A consultation with a doctor maps whether threads, PRP or a combination suits your skin."><a href="#guide">Facial laxity <small>Threads &middot; PRP</small></a></li>
         <li data-img="2" data-cap="Tension and puffiness in the face. Our new buccal facial massage works from inside and outside the cheeks."><a href="#buccal">Facial tension <small>Buccal massage</small></a></li>
-        <li data-img="0" data-cap="Skin through peri and post-menopause. Your doctor looks at the whole picture, inside and out."><a href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Menopause skin <small>Inside &amp; out</small></a></li>
-        <li data-img="3" data-cap="Thinning hair. PRP for the scalp is discussed at a consultation with a doctor."><a href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Thinning hair <small>PRP</small></a></li>
+        <li data-img="3" data-cap="Thinning hair. Emcyte PRP for the scalp is discussed at a consultation with a doctor."><a href="#prp">Thinning hair <small>PRP</small></a></li>
       </ul>
       <div class="peek reveal">
         <img class="on" src="assets/concern-laxity.webp" alt="">
@@ -262,6 +277,20 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
   </div>
 </section>
 
+<section class="prp" id="prp">
+  <div class="wrap center">
+    <div class="eyebrow reveal">Our signature treatment</div>
+    <h2 class="sec-title reveal">Not all PRP is prepared the same way</h2>
+    <p class="sec-lead reveal">If you're researching PRP you'll come across three different terms. They describe genuinely different preparations, and it's worth knowing which one you're being offered.</p>
+    <div class="pillars">
+      <div class="pillar reveal"><div class="num gold-text">PRP</div><h3>Standard PRP</h3><p>Typically prepared in a glass test tube.</p></div>
+      <div class="pillar reveal" style="border-color:var(--gold)"><div class="num gold-text">Emcyte</div><h3>Emcyte PurePRP</h3><p>Prepared in an FDA-cleared closed-system device, producing a high-concentration platelet preparation. This is what we use at Mojo.</p></div>
+      <div class="pillar reveal"><div class="num gold-text">PRF</div><h3>Platelet rich fibrin</h3><p>A different preparation again, with its own process and uses.</p></div>
+    </div>
+    <p class="reveal" style="margin-top:36px"><a class="btn btn-dark" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Book a regenerative skin consultation</a></p>
+  </div>
+</section>
+
 <section class="guide" id="guide">
   <div class="wrap">
     <div>
@@ -269,10 +298,10 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
       <h2 class="sec-title reveal">Not all threads are the same</h2>
       <p class="reveal" style="color:#d9cfbe">Before you book anything, understand what you are actually choosing. Dr Maria's plain-English guide covers:</p>
       <ul class="reveal">
+        <li>What thread procedures actually do, and what they don't</li>
         <li>The difference between collagen threads and lifting threads</li>
-        <li>Why prices vary so much between clinics</li>
-        <li>What happens on the day, and the weeks after</li>
-        <li>The questions to ask any doctor before a thread lift</li>
+        <li>Why some people aren't the right candidates</li>
+        <li>Where threads sit alongside other regenerative options</li>
       </ul>
     </div>
     <div class="card-form reveal">
@@ -331,12 +360,12 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
     <div>
       <div class="eyebrow reveal">Meet our founder</div>
       <h2 class="sec-title reveal">Dr Maria Mackey</h2>
-      <p class="reveal" style="color:var(--muted)">Dr Maria graduated from Otago University in New Zealand and has practised medicine in Australia since 1994. She has a special interest in regenerative cosmetic medicine, and brings the same whole-person thinking from her integrative practice to every cosmetic consultation.</p>
+      <p class="reveal" style="color:var(--muted)">Dr Maria has practised medicine continuously since 1994. She has a special interest in regenerative cosmetic medicine, trained in Aptos threads at an advanced level in Tbilisi, Georgia, and brings the whole-person thinking of her integrative practice to every cosmetic consultation.</p>
       <blockquote class="reveal">&ldquo;When we do things, we do them properly.&rdquo;</blockquote>
       <div class="facts">
-        <div class="fact reveal"><b class="count" data-to="1994">1994</b><span>practising in Australia</span></div>
-        <div class="fact reveal"><b class="count" data-to="2002">2002</b><span>integrative medicine since</span></div>
-        <div class="fact reveal"><b>MBChB</b><span>FRNZCGP</span></div>
+        <div class="fact reveal"><b>1994</b><span>practising continuously since</span></div>
+        <div class="fact reveal"><b>2002</b><span>integrative medicine since</span></div>
+        <div class="fact reveal"><b>MBChB</b><span>FRACGP &middot; FAARM</span></div>
       </div>
     </div>
   </div>
@@ -344,9 +373,9 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
 
 <section class="evenings center" id="evenings">
   <div class="wrap">
-    <div class="eyebrow reveal">Mojo Evenings</div>
-    <h2 class="sec-title reveal">An evening at the clinic, just for you</h2>
-    <p class="sec-lead reveal" style="color:#cdbfa8">Small-group evenings where Dr Maria talks through regenerative skin care, answers your questions and you meet the team. Join the list and you will hear about the next date first.</p>
+    <div class="eyebrow reveal">The Skin + Hormones Evening</div>
+    <h2 class="sec-title reveal">Why your skin changes in your 40s</h2>
+    <p class="sec-lead reveal" style="color:#cdbfa8">A small-group evening at the clinic. Dr Maria talks for 20 to 30 minutes about hormonal change, collagen, skin quality and what happens inside, then answers your questions. Join the list and you'll hear about the next date first.</p>
     <form class="ev-form" onsubmit="document.querySelector('.ev-done').style.display='block';this.style.display='none';return false">
       <input type="email" placeholder="Your email" required aria-label="Email">
       <button class="btn btn-gold" type="submit">Save me a seat</button>
