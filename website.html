@@ -46,7 +46,7 @@ nav .btn{padding:11px 22px}
 
 /* hero */
 .hero{position:relative;background:var(--ink) url('assets/gold-texture.webp') center/cover;color:#f3ecdf;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch;min-height:640px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch;min-height:640px}
 .hero-copy{padding:90px 0 80px;display:flex;flex-direction:column;justify-content:center}
 .hero-copy .eyebrow{color:var(--gold-lt)}
 .hero h1{font-size:clamp(2.6rem,5.4vw,4.6rem);margin:18px 0 22px}
@@ -54,7 +54,7 @@ nav .btn{padding:11px 22px}
 .hero p.lead{font-size:1.12rem;max-width:520px;color:#d9cfbe}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
 .hero-photo{position:relative;align-self:end}
-.hero-photo img{width:100%;height:600px;object-fit:cover;object-position:center top;border-radius:220px 220px 0 0;border:1px solid rgba(201,164,92,.4);border-bottom:0}
+.hero-photo img{width:100%;height:600px;object-fit:cover;object-position:32% center;border-radius:18px;border:1px solid rgba(201,164,92,.4)}
 .hero-photo .tag{position:absolute;left:-24px;bottom:60px;background:rgba(13,11,9,.88);border:1px solid rgba(201,164,92,.45);padding:14px 20px;border-radius:14px;font-size:.85rem;color:#e8dfcf}
 .hero-photo .tag b{display:block;font-family:'Cormorant Garamond';font-size:1.3rem;font-weight:500;color:var(--gold-lt)}
 .reveal-in{opacity:0;transform:translateY(22px);animation:rin 1s forwards}
@@ -87,7 +87,7 @@ section{padding:100px 0}
 .prp .pillar p{min-height:0}
 
 .vid video{width:100%;display:block;border-radius:18px;background:#e9e6e2;aspect-ratio:16/9;object-fit:cover}
-.vid.arch video{aspect-ratio:4/5;object-position:center;border-radius:200px 200px 18px 18px;height:560px}
+.vid.arch video{aspect-ratio:4/5;object-position:center;border-radius:18px;height:560px}
 .vcap{font-family:'Cormorant Garamond';font-style:italic;font-size:1.25rem;color:var(--muted);margin-top:14px}
 .reviews{background:var(--cream);overflow:hidden}
 .stars{font-size:1rem;color:var(--muted);margin-bottom:40px}
@@ -111,7 +111,7 @@ section{padding:100px 0}
 .concern-list a{display:flex;justify-content:space-between;align-items:center;padding:22px 4px;text-decoration:none;font-family:'Cormorant Garamond';font-size:1.7rem;transition:.3s}
 .concern-list a small{font-family:'Jost';font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
 .concern-list li.on a,.concern-list a:hover{color:var(--gold-dk);padding-left:14px}
-.peek{position:relative;aspect-ratio:4/5;border-radius:200px 200px 18px 18px;overflow:hidden;background:var(--stone)}
+.peek{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:var(--stone)}
 .peek img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0;transition:opacity .6s,transform 1.2s;transform:scale(1.05)}
 .peek img.on{opacity:1;transform:scale(1)}
 .peek .cap{position:absolute;left:20px;right:20px;bottom:20px;background:rgba(13,11,9,.8);color:#efe6d6;padding:16px 18px;border-radius:12px;font-size:.9rem}
@@ -150,7 +150,7 @@ section{padding:100px 0}
 .pk .btn{margin-top:auto;justify-content:center;padding:12px 18px}
 
 /* doctor */
-.doctor .split img{height:560px;object-position:center top;border-radius:200px 200px 18px 18px}
+.doctor .split img{height:560px;object-position:center top;border-radius:18px}
 blockquote{font-family:'Cormorant Garamond';font-style:italic;font-size:1.9rem;line-height:1.3;margin:26px 0;padding-left:22px;border-left:2px solid var(--gold)}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
 .fact{border-top:1px solid var(--stone);padding-top:14px}
@@ -165,7 +165,7 @@ blockquote{font-family:'Cormorant Garamond';font-style:italic;font-size:1.9rem;l
 .ev-done{display:none;margin-top:24px;color:var(--gold-lt)}
 
 /* room */
-.room img{width:100%;height:520px;object-fit:cover;border-radius:18px}
+.room img{width:min(100%,520px);height:auto;margin:0 auto;border-radius:18px;border:1px solid rgba(201,164,92,.4)}
 
 footer{background:#000;color:#a99d88;padding:70px 0 30px;font-size:.92rem}
 footer .cols{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
@@ -191,7 +191,7 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
   .pk-grid{grid-template-columns:1fr 1fr}
   .peek{max-height:460px}
   .split img,.doctor .split img{height:400px}
-  .room img{height:300px}
+  .room img{height:auto;width:min(100%,340px)}
   footer .cols{grid-template-columns:1fr}
   section{padding:70px 0}
 }
@@ -230,15 +230,15 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
   <div class="wrap">
     <div class="hero-copy">
       <div class="eyebrow reveal-in d1">Doctor-led &middot; Skin biology first &middot; Neutral Bay</div>
-      <h1 class="reveal-in d2">The House of <em class="gold-text">Cosmetic Regenerative</em> Medicine</h1>
-      <p class="lead reveal-in d3">Skin from within. Your skin reflects what is happening inside your body, so we start with its biology, not a treatment menu. Then we use regenerative treatments selectively, to support skin that looks healthy and still looks like you.</p>
+      <h1 class="reveal-in d2">Your skin has changed. <em class="gold-text">Let's find out why.</em></h1>
+      <p class="lead reveal-in d3">Thinner, duller, not quite like you? You don't want to look done. You want to look like yourself again. Dr Maria starts with what is happening underneath your skin, then recommends regenerative treatments only where they suit you.</p>
       <div class="ctas reveal-in d4">
         <a class="btn btn-gold" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291" target="_blank" rel="noopener">Book your consultation</a>
-        <a class="btn btn-line" href="#guide">Get the thread lift guide</a>
+        <a class="btn btn-line" href="quiz.html">Take the 2-minute skin quiz</a>
       </div>
     </div>
     <div class="hero-photo reveal-in d3">
-      <img src="assets/dr-maria.webp" alt="Dr Maria Mackey, founder of Mojo Cosmetic Clinic">
+      <img src="assets/clinic-room.webp" alt="Dr Maria Mackey in consultation with a client at Mojo Cosmetic Clinic, Neutral Bay">
       <div class="tag"><b>Dr Maria Mackey</b>Founder &middot; practising medicine since 1994</div>
     </div>
   </div>
@@ -394,7 +394,7 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
 
 <section class="doctor" id="doctor">
   <div class="wrap split">
-    <div class="vid arch reveal"><video controls playsinline preload="none" poster="assets/maria-intro-poster.webp"><source src="assets/maria-intro.mp4" type="video/mp4"></video></div>
+    <div class="vid reveal"><video controls playsinline preload="none" poster="assets/maria-intro-edit-poster.jpg"><source src="assets/maria-intro-edit.mp4" type="video/mp4"></video></div>
     <div>
       <div class="eyebrow reveal">Meet our founder</div>
       <h2 class="sec-title reveal">Dr Maria Mackey</h2>
@@ -424,7 +424,7 @@ footer .legal{border-top:1px solid #2a241d;margin-top:50px;padding-top:22px;font
 
 <section class="room">
   <div class="wrap">
-    <img class="reveal" src="assets/clinic-room.webp" alt="Consultation room at Mojo Cosmetic Clinic, Neutral Bay">
+    <img class="reveal" src="assets/dr-maria.webp" alt="Dr Maria Mackey, founder of Mojo Cosmetic Clinic">
   </div>
 </section>
 
