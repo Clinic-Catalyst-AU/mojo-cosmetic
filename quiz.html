@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Has your skin changed? | Mojo Cosmetic Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/funnel.css">
+<style>
+.qhero{padding:70px 0 40px}
+.qhero h1{max-width:820px}
+.qbox{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--stone);border-radius:var(--r);padding:38px;box-shadow:0 30px 60px -40px rgba(13,11,9,.35)}
+.bar{height:4px;background:var(--stone);border-radius:4px;overflow:hidden;margin-bottom:26px}
+.bar i{display:block;height:100%;width:0;background:var(--gold-grad);transition:width .4s}
+.step{display:none}
+.step.on{display:block;animation:fade .45s}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.qnum{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-dk);font-weight:500}
+.step h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:8px 0 6px}
+.step .hint{color:var(--muted);font-size:.95rem;margin-bottom:18px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:14px;align-items:center;text-align:left;width:100%;background:var(--paper);border:1px solid var(--stone);border-radius:14px;padding:15px 18px;font:inherit;color:var(--text);cursor:pointer;transition:.2s}
+.opt:hover{border-color:var(--gold)}
+.opt.sel{border-color:var(--gold-dk);background:#fbf3e3}
+.opt .dot{flex:0 0 18px;height:18px;border-radius:50%;border:1px solid var(--gold-dk)}
+.opt.sel .dot{background:var(--gold-grad)}
+.nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+.nav .btn{padding:13px 24px}
+.back{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;text-decoration:underline}
+.fields{display:grid;gap:12px;margin-top:6px}
+.fields label{font-size:.85rem;color:var(--muted)}
+.fields input[type=text],.fields input[type=email],.fields input[type=tel]{width:100%;font:inherit;padding:14px 16px;border:1px solid var(--stone);border-radius:12px;background:var(--paper)}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--text)}
+.check input{margin-top:5px;accent-color:#9a7a3c}
+.err{color:#9b2c1f;font-size:.85rem;min-height:1.2em}
+.demo{font-size:.75rem;color:var(--muted);margin-top:10px}
+.why{margin-top:50px}
+@media (max-width:520px){.qbox{padding:24px 18px}.nav{flex-direction:column-reverse;align-items:stretch}.back{padding:8px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by Clinic Catalyst for Mojo Cosmetic Clinic · demo only, nothing is sent · <a href="index.html">back to the plan</a></div>
+<header class="top"><div class="wrap"><img src="assets/mojo-logo.webp" alt="Mojo Cosmetic Clinic"><a class="small" href="guide.html">Free guide</a></div></header>
+
+<section class="dark qhero">
+  <div class="wrap">
+    <div class="eyebrow">A 2-minute skin check with Dr Maria Mackey's clinic</div>
+    <h1>"My skin has changed. It's thinner, duller, and it doesn't look like <em>me</em> anymore."</h1>
+    <p class="lead" style="margin-top:18px">If that sounds familiar, answer six quick questions. You'll get a starting point for your consultation and Dr Maria's free guide: <em>Why your skin changed after 40, and what a doctor looks at first.</em></p>
+  </div>
+</section>
+
+<section class="cream" style="padding-top:50px">
+  <div class="wrap">
+    <div class="qbox" id="quiz">
+      <div class="bar"><i id="bar"></i></div>
+
+      <div class="step on" data-q="concern">
+        <div class="qnum">Question 1 of 6</div>
+        <h2>What have you noticed about your skin?</h2>
+        <p class="hint">Pick the one that feels most like you.</p>
+        <div class="opts">
+          <button class="opt" data-v="thin"><span class="dot"></span>It looks thinner, drier or a bit crepey</button>
+          <button class="opt" data-v="dull"><span class="dot"></span>It looks dull and tired, even after a good sleep</button>
+          <button class="opt" data-v="texture"><span class="dot"></span>Lines, uneven tone, sun damage or rough texture</button>
+          <button class="opt" data-v="laxity"><span class="dot"></span>Hollows under the eyes, or my jawline and neck feel looser</button>
+          <button class="opt" data-v="tension"><span class="dot"></span>My face feels tight, puffy or tense, like I'm holding stress in it</button>
+        </div>
+      </div>
+
+      <div class="step" data-q="when">
+        <div class="qnum">Question 2 of 6</div>
+        <h2>When did you start noticing it?</h2>
+        <div class="opts">
+          <button class="opt" data-v="recent"><span class="dot"></span>In the last year or so</button>
+          <button class="opt" data-v="gradual"><span class="dot"></span>Slowly, over a few years</button>
+          <button class="opt" data-v="hormonal"><span class="dot"></span>Around the time my cycle changed, or perimenopause started</button>
+          <button class="opt" data-v="unsure"><span class="dot"></span>I'm honestly not sure</button>
+        </div>
+      </div>
+
+      <div class="step" data-q="tried">
+        <div class="qnum">Question 3 of 6</div>
+        <h2>What have you tried so far?</h2>
+        <div class="opts">
+          <button class="opt" data-v="skincare"><span class="dot"></span>Better skincare at home</button>
+          <button class="opt" data-v="facials"><span class="dot"></span>Facials or salon treatments</button>
+          <button class="opt" data-v="clinic"><span class="dot"></span>Clinic treatments, like peels, needling or injectables</button>
+          <button class="opt" data-v="nothing"><span class="dot"></span>Nothing yet, I'm just starting to look</button>
+        </div>
+      </div>
+
+      <div class="step" data-q="matters">
+        <div class="qnum">Question 4 of 6</div>
+        <h2>What matters most to you?</h2>
+        <div class="opts">
+          <button class="opt" data-v="natural"><span class="dot"></span>I don't want to look done. I want to look like myself.</button>
+          <button class="opt" data-v="downtime"><span class="dot"></span>Little or no time away from work and life</button>
+          <button class="opt" data-v="why"><span class="dot"></span>Understanding <em>why</em> my skin has changed</button>
+          <button class="opt" data-v="plan"><span class="dot"></span>A clear plan I can follow over time</button>
+        </div>
+      </div>
+
+      <div class="step" data-q="within">
+        <div class="qnum">Question 5 of 6</div>
+        <h2>Would you like the inside story too?</h2>
+        <p class="hint">Dr Maria also practises integrative medicine. Hormones, gut health and nutrition can all show up in your skin.</p>
+        <div class="opts">
+          <button class="opt" data-v="yes"><span class="dot"></span>Yes, I'd like to look at what's happening inside as well</button>
+          <button class="opt" data-v="maybe"><span class="dot"></span>Maybe, I'd like to hear more first</button>
+          <button class="opt" data-v="skin"><span class="dot"></span>Just my skin for now</button>
+        </div>
+      </div>
+
+      <div class="step" data-q="details">
+        <div class="qnum">Last step</div>
+        <h2>Where should we send your guide?</h2>
+        <p class="hint">You'll get your starting point straight away, plus the guide and Dr Maria's short video.</p>
+        <div class="fields">
+          <div><label for="fn">First name</label><input id="fn" type="text" autocomplete="given-name"></div>
+          <div><label for="em">Email</label><input id="em" type="email" autocomplete="email"></div>
+          <div><label for="mb">Mobile</label><input id="mb" type="tel" autocomplete="tel" placeholder="04xx xxx xxx"></div>
+          <label class="check"><input type="checkbox" id="age"> I'm 18 or over</label>
+          <label class="check"><input type="checkbox" id="ok"> Send me the guide and the occasional email or text from Mojo. I can unsubscribe any time.</label>
+          <div class="err" id="err"></div>
+        </div>
+        <p class="demo">Demo: in the live version this saves you into Mojo's Go High Level and starts your follow-up. Here, nothing is sent.</p>
+      </div>
+
+      <div class="nav">
+        <button class="back" id="back" style="visibility:hidden">Back</button>
+        <button class="btn btn-gold" id="next">Next</button>
+      </div>
+    </div>
+
+    <div class="wrap narrow why">
+      <p class="note">This check gives you a starting point to talk through, not a diagnosis or a treatment recommendation. Every treatment is decided with a doctor at a face-to-face consultation, where suitability, alternatives, risks and aftercare are explained first. For people 18 and over.</p>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p>Mojo Cosmetic Clinic · Suite 11, Ground Floor, 40 Yeo St, Neutral Bay NSW 2089 · 02 9133 8500</p>
+  <p>General information only, not medical advice. All procedures carry risks. Individual results vary.</p>
+  <p><span class="review-flag">Concept</span> Wording to be reviewed by Dr Maria Mackey before use.</p>
+</div></footer>
+
+<script>
+(function(){
+  var steps=[].slice.call(document.querySelectorAll('.step')), i=0, ans={};
+  var next=document.getElementById('next'), back=document.getElementById('back'), bar=document.getElementById('bar');
+  function show(){
+    steps.forEach(function(s,k){s.classList.toggle('on',k===i)});
+    bar.style.width=((i)/(steps.length-1)*100)+'%';
+    back.style.visibility=i?'visible':'hidden';
+    next.textContent=i===steps.length-1?'Get my starting point':'Next';
+    var q=steps[i].dataset.q; next.disabled=false;
+    if(q!=='details' && !ans[q]) next.style.opacity=.45; else next.style.opacity=1;
+    document.getElementById('quiz').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  document.querySelectorAll('.step .opt').forEach(function(b){
+    b.addEventListener('click',function(){
+      var st=b.closest('.step'); st.querySelectorAll('.opt').forEach(function(o){o.classList.remove('sel')});
+      b.classList.add('sel'); ans[st.dataset.q]=b.dataset.v; next.style.opacity=1;
+      setTimeout(function(){ if(i<steps.length-1){i++;show();} },260);
+    });
+  });
+  back.addEventListener('click',function(){ if(i>0){i--;show();} });
+  next.addEventListener('click',function(){
+    var q=steps[i].dataset.q;
+    if(q!=='details'){ if(ans[q]){i++;show();} return; }
+    var fn=document.getElementById('fn').value.trim(), em=document.getElementById('em').value.trim(), err=document.getElementById('err');
+    if(!fn||!/^\S+@\S+\.\S+$/.test(em)){err.textContent='Please add your first name and a valid email.';return;}
+    if(!document.getElementById('age').checked){err.textContent='This guide is for people 18 and over.';return;}
+    if(!document.getElementById('ok').checked){err.textContent='Please tick the box so we can send your guide.';return;}
+    // Starting point: hormones/within first, then doctor-led, then buccal, then skin quality
+    var start='skin';
+    if(ans.within==='yes'||ans.when==='hormonal') start='within';
+    else if(ans.concern==='laxity') start='doctor';
+    else if(ans.concern==='tension') start='tension';
+    location.href='guide.html?start='+start+'&concern='+encodeURIComponent(ans.concern)+'&name='+encodeURIComponent(fn);
+  });
+  show();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Follow-up sequence | Mojo Cosmetic Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/funnel.css">
+<style>
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.flow .card{padding:20px}
+.flow .card b{display:block;font-family:'Cormorant Garamond';font-size:1.3rem;font-weight:500;color:var(--ink)}
+.flow .card span{font-size:.9rem;color:var(--muted)}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.82em;background:#f1e9da;padding:2px 7px;border-radius:6px;color:#5a4520}
+.tl{position:relative;margin-top:36px;padding-left:34px}
+.tl:before{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),var(--stone))}
+.item{position:relative;margin-bottom:22px}
+.item:before{content:"";position:absolute;left:-31px;top:24px;width:16px;height:16px;border-radius:50%;background:var(--gold-grad);border:3px solid var(--paper)}
+.mail{background:#fff;border:1px solid var(--stone);border-radius:var(--r);overflow:hidden}
+.mail-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center;padding:16px 22px;border-bottom:1px solid var(--stone);background:var(--cream)}
+.when{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dk);font-weight:500}
+.type{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--gold-lt);padding:4px 10px;border-radius:20px}
+.mail-body{padding:20px 22px}
+.subj{font-family:'Cormorant Garamond';font-size:1.45rem;line-height:1.2;margin-bottom:12px}
+.subj small{display:block;font-family:Jost;font-size:.78rem;color:var(--muted);margin-top:4px}
+.mail-body p{margin-bottom:10px;font-size:.97rem}
+.cta{display:inline-block;margin:6px 0 10px;background:var(--gold-grad);color:var(--ink);padding:11px 22px;border-radius:30px;text-decoration:none;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.sig{font-family:'Cormorant Garamond';font-style:italic;font-size:1.2rem}
+.mini-stack{border:1px solid rgba(201,164,92,.45);border-radius:14px;padding:6px 18px;margin:10px 0 14px;background:var(--paper)}
+.mini-stack div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--stone);font-size:.92rem}
+.mini-stack div:last-child{border:0}
+.mini-stack span:last-child{color:var(--gold-dk);white-space:nowrap}
+@media (max-width:860px){.flow{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.flow{grid-template-columns:1fr}.tl{padding-left:24px}.item:before{left:-21px}.tl:before{left:4px}}
+</style>
+</head>
+<body>
+<div class="concept">Concept preview by Clinic Catalyst for Mojo Cosmetic Clinic · <a href="index.html">back to the plan</a></div>
+<header class="top"><div class="wrap"><img src="assets/mojo-logo.webp" alt="Mojo Cosmetic Clinic"><a class="small" href="quiz.html">Try the skin check</a></div></header>
+
+<section class="dark" style="padding:64px 0">
+  <div class="wrap">
+    <div class="eyebrow">What happens after someone takes the skin check</div>
+    <h1>From "my skin has changed" to a <em>booked consultation</em></h1>
+    <p class="lead" style="margin-top:16px">Ten days of short, helpful messages from Dr Maria, written for the woman who has noticed her skin changing and doesn't want to look done. Each one teaches something and ends with an easy way to book. Then she stays on a gentle monthly newsletter, because someone not ready today may be ready in three months.</p>
+  </div>
+</section>
+
+<section class="cream" style="padding:60px 0">
+  <div class="wrap">
+    <div class="eyebrow">In Go High Level, the moment she submits</div>
+    <h2>Tagged, staged and <em>followed up</em></h2>
+    <div class="flow">
+      <div class="card"><b>Tags</b><span><code>lead: skin check</code> plus her concern, e.g. <code>concern: thin dull</code>, and her starting point, e.g. <code>start: within</code></span></div>
+      <div class="card"><b>Pipeline</b><span>New lead, then Contacted, Consultation offered, Booked, Attended, Treatment plan, Treatment started, Long-term care</span></div>
+      <div class="card"><b>Reception</b><span>A task for the front desk if she ticks that she'd like a call, or if she replies to any message</span></div>
+      <div class="card"><b>Stops when booked</b><span>Booking in Fresha moves her to Booked and stops the sequence. Claude checks Fresha bookings through the Data Connector.</span></div>
+    </div>
+    <p class="note">Booking links use Mojo's existing Fresha page. Every message carries an unsubscribe link (email) or STOP to opt out (SMS). No time-limited offers or discounts on doctor-led procedures are used anywhere in this sequence.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <div class="eyebrow">The sequence</div>
+    <h2>Eight messages over <em>ten days</em></h2>
+    <div class="tl">
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Straight away</span><span class="type">Email</span></div><div class="mail-body">
+        <div class="subj">Your skin hasn't forgotten how to be skin<small>Preview: Your guide is here, {first name}</small></div>
+        <p>Hi {first name},</p>
+        <p>Thank you for taking a few minutes to tell me about your skin. If you've looked in the mirror lately and thought "that doesn't look like me", I want you to know how common that is, and that there is usually a reason underneath it.</p>
+        <p>Here is your free guide, <em>Why your skin changed after 40, and what a doctor looks at first</em>. It's short and written in plain English.</p>
+        <a class="cta" href="assets/mojo-regenerative-skin-guide.pdf">Download your guide</a>
+        <p>Over the next week or so I'll send you a few short notes. No pressure, just the things I wish every woman knew.</p>
+        <p class="sig">Dr Maria Mackey</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Straight away</span><span class="type">SMS</span></div><div class="mail-body">
+        <p>Hi {first name}, it's Mojo Cosmetic Clinic. Your skin guide from Dr Maria is in your inbox. If it's not there, check your promotions folder. Questions? Just reply here. Reply STOP to opt out.</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Day 1</span><span class="type">Email · video</span></div><div class="mail-body">
+        <div class="subj">"I don't want to look done"<small>Preview: A short hello from me</small></div>
+        <p>Hi {first name},</p>
+        <p>That's the sentence I hear most often at a first cosmetic consultation. Women want to look like the version of themselves they recognise. I've recorded a short video so you can meet me and hear how I think about skin.</p>
+        <a class="cta" href="guide.html">Watch the video</a>
+        <p>I've been a doctor for more than 30 years, and I approach skin the same way I approach everything: understand what's happening underneath first.</p>
+        <p class="sig">Dr Maria</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Day 3</span><span class="type">Email</span></div><div class="mail-body">
+        <div class="subj">Why your skin changed "suddenly" in your forties<small>Preview: It's rarely as sudden as it feels</small></div>
+        <p>Hi {first name},</p>
+        <p>Perimenopause isn't a single event. It can run for 10 to 15 years, and symptoms can start in the late thirties. During that time, collagen loss and skin thinning speed up. Nutrition, gut health and inflammation can all show in your skin too.</p>
+        <p>That's why at Mojo we start with what's happening inside, then decide together what, if anything, to do on the outside. You can keep it to skin only, or look at the bigger picture as well. It's your choice.</p>
+        <a class="cta" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291">Book a consultation</a>
+        <p class="sig">Dr Maria</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Day 5</span><span class="type">Email</span></div><div class="mail-body">
+        <div class="subj">What actually happens at a consultation<small>Preview: No pressure, no hard sell</small></div>
+        <p>Hi {first name},</p>
+        <p>A lot of women put off booking because they're not sure what to expect. Here it is. I look at your skin and talk through your relevant health history. I take baseline photos for your file. Then I explain what I see, what I'd suggest, the alternatives and the risks.</p>
+        <p>You don't have to decide anything on the day. Some of the treatments I offer, such as PRP and threads, always need a face-to-face consultation and written consent first anyway.</p>
+        <a class="cta" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291">Book a consultation</a>
+        <p class="sig">Dr Maria</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Day 7</span><span class="type">Email</span></div><div class="mail-body">
+        <div class="subj">The questions women ask me most<small>Preview: Including the one about PRP</small></div>
+        <p>Hi {first name},</p>
+        <p><b>Do I need an integrative consultation too?</b> No. A cosmetic consultation stands on its own. Combining them is there if you want it.</p>
+        <p><b>Is all PRP the same?</b> No. At Mojo I use the Emcyte PurePRP system, a closed-system device. Standard PRP is usually spun once in an open tube, and PRF is a different preparation again. Which one suits you is a clinical decision we make together.</p>
+        <p><b>Can I talk to someone first?</b> Of course. Reply to this email or call reception on 02 9133 8500.</p>
+        <p class="sig">Dr Maria</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Day 8</span><span class="type">Email · course of three</span></div><div class="mail-body">
+        <div class="subj">Skin likes a rhythm<small>Preview: Why most skin treatments are done as a course</small></div>
+        <p>Hi {first name},</p>
+        <p>Your skin renews on its own timetable, so most skin treatments are done as a short course with time in between, then maintenance. If we agree at your consultation that a course suits you, booking it up front keeps you in that rhythm and costs less than paying session by session. For example:</p>
+        <div class="mini-stack">
+          <div><span>Skin needling, course of three</span><span>$950 (save $100)</span></div>
+          <div><span>Clinical peels, course of three, face</span><span>$450 (save $75)</span></div>
+          <div><span>SQT Bio-Microneedling, Resurfacing package</span><span>$1,050.30 (save $116.70)</span></div>
+          <div><span>Each course includes</span><span>Sessions spaced for your skin, aftercare guidance, progress photos <span class="confirm">Maria to confirm</span></span></div>
+        </div>
+        <p>A consultation always comes first, and a course only goes ahead if it's right for you.</p>
+        <a class="cta" href="tel:0291338500">Call 02 9133 8500</a>
+        <p class="sig">Dr Maria</p>
+        <p style="font-size:.8rem;color:var(--muted)">Prices from mojocosmeticclinic.com.au/packages-promotions. Prepaid packages are non-refundable for change of mind.</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Day 10</span><span class="type">Email + SMS</span></div><div class="mail-body">
+        <div class="subj">Ready to look like you again?<small>Preview: Your consultation is one click away</small></div>
+        <p>Hi {first name},</p>
+        <p>If you've read the guide and you're still thinking about your skin, I'd love to meet you. We'll look at what's changed, why, and what your options are. Then you decide, in your own time.</p>
+        <a class="cta" href="https://www.fresha.com/book-now/mojo-cosmetic-clinic-iewphnsx/all-offer?share=true&pId=2636291">Book your consultation</a>
+        <p>Or call reception on 02 9133 8500. We're at 40 Yeo St, Neutral Bay.</p>
+        <p class="sig">Dr Maria</p>
+        <p style="font-size:.85rem;color:var(--muted);border-top:1px solid var(--stone);padding-top:10px;margin-top:10px">SMS: Hi {first name}, it's Mojo. Dr Maria has consultation times available in Neutral Bay. Book here: {booking link} or call 02 9133 8500. Reply STOP to opt out.</p>
+      </div></div></div>
+
+      <div class="item"><div class="mail"><div class="mail-head"><span class="when">Then monthly</span><span class="type">Newsletter</span></div><div class="mail-body">
+        <div class="subj">One topic a month, matched to her concern</div>
+        <p>Hormones and skin. What a peel actually does. Why sleep shows on your face. The Skin + Hormones Evening invitation. Each one teaches first and ends with a soft "book when you're ready". Segmented by her tags, so someone interested in perimenopause doesn't get Onda emails.</p>
+      </div></div></div>
+
+    </div>
+    <p class="note">Every message: general information only, not medical advice. All procedures carry risks. Individual results vary. Clinical wording to be reviewed by Dr Maria Mackey before anything is loaded into Go High Level.</p>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p>Mojo Cosmetic Clinic · Suite 11, Ground Floor, 40 Yeo St, Neutral Bay NSW 2089 · 02 9133 8500</p>
+  <p><span class="review-flag">Concept</span> Built by Clinic Catalyst for Dr Maria Mackey's review.</p>
+</div></footer>
+</body>
+</html>
